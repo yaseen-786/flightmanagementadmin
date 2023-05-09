@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+    <h1 class="text-center">Delete Flight Details</h1>
+
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>SOURCE</th>
+            <th>DESTINATION</th>
+            <th>DATE</th>
+            <th>PRICE</th>
+            <th>CAPACITY</th>
+            <th>DURATION</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data">
+            <td>{{ item.flightid }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.source }}</td>
+            <td>{{ item.destination }}</td>
+            <td>{{ item.date }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.capacity }}</td>
+            <td>{{ item.duration }}</td>
+            <td> <button mat-raised-button color="warn" (click)="getItemData(item)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      

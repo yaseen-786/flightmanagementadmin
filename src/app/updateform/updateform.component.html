@@ -1,0 +1,43 @@
+
+<app-navbar></app-navbar>
+<div class="container form">
+    <div class="row">
+        <h1 class="text-center"> Update Flight Details</h1>
+        <form #reg="ngForm" (ngSubmit)="submit(reg)">
+            <mat-form-field appearance="outline">
+                <mat-label>Flight Name</mat-label>
+                <input matInput name="name" placeholder="Enter flight name" [(ngModel)]="datareceived.name">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Flight Source</mat-label>
+                <input matInput name="source" placeholder="Enter source location"    [(ngModel)]="datareceived.source">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Flight Destination</mat-label>
+                <input matInput name="destination" placeholder="Enter destination location" [(ngModel)]="datareceived.destination">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Flight Date</mat-label>
+                <input matInput name="date" placeholder="DD-MM-YYYY" [(ngModel)]="datareceived.date">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Flight Duration</mat-label>
+                <input matInput name="duration" type="number" placeholder="Enter Flight Duration" [(ngModel)]="datareceived.duration">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Flight Capacity</mat-label>
+                <input matInput name="capacity" type="number" placeholder="Enter Flight Capacity" [(ngModel)]="datareceived.capacity">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Flight Price</mat-label>
+                <input matInput name="price" type="number" placeholder="Enter Flight Price" [(ngModel)]="datareceived.price">
+            </mat-form-field>
+            <button mat-raised-button color="warn" type="submit">Update</button>
+        </form>
+        <div>
+
+            <!-- <h2>{{sname1}} Data Added Sucessfully</h2> -->
+        </div>
+    </div>
+
+</div>

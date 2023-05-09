@@ -1,0 +1,14 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.example-card {
+    max-width: 350px;
+    margin-top: 20px;
+  }
+
+  .home{
+    height: 300px;
+    width: 300px;
+    font-size: 300px;
+  }
+
+  

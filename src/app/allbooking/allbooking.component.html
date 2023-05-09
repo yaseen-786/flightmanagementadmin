@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+    <h1 class="text-center">All Booking Details</h1>
+
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>FLIGHTNAME</th>
+            <th>SOURCE</th>
+            <th>DESTINATION</th>
+            <th>DATE</th>
+            <th>QUANTITY</th>
+            <th>AMOUNT</th>
+            <th>CUSTOMERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of bookingdata">
+            <td>{{ item.bookid }}</td>
+            <td>{{ item.flight.name }}</td>
+            <td>{{ item.flight.source }}</td>
+            <td>{{ item.flight.destination }}</td>
+            <td>{{ item.flight.date }}</td>
+            <td>{{ item.noofticket }}</td>
+            <td>{{ item.amount }}</td>
+            <td>{{ item.cust.name }}</td>
+          </tr>
+        </tbody>
+      </table>

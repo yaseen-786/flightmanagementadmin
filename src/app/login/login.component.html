@@ -1,0 +1,24 @@
+<div class="container form">
+    <div class="row text-center">
+        <h1 class="text-center"> Admin Login </h1>
+        <form #reg="ngForm" (ngSubmit)="submit(reg)">
+            <mat-form-field appearance="outline" >
+                <mat-label>Username</mat-label>
+                <input matInput name="username" placeholder="Enter your username " ngModel>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput name="password" placeholder="Enter your password " type="password" ngModel>
+            </mat-form-field>
+            <div class="text-center">
+            <button mat-raised-button color="primary" type="submit" >Login</button>
+        </div>
+        </form>
+        <div>
+
+            <!-- <h2>{{sname1}} Data Added Sucessfully</h2> -->
+        </div>
+    </div>
+
+</div>

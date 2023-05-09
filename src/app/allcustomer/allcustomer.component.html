@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+    <h1 class="text-center">All Customers Details</h1>
+
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>USERNAME</th>
+            <th>PASSWORD</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data">
+            <td>{{ item.custid }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.username }}</td>
+            <td>{{ item.password }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.phone }}</td>
+           
+          </tr>
+        </tbody>
+      </table>
