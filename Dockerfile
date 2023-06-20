@@ -7,7 +7,7 @@ RUN ng build
 RUN npm run -c build
 
 FROM nginx:alpine
-COPY --from=build /app/dist/flightmanagementuser /usr/share/nginx/html
+COPY --from=build /app/dist/flightmanagementadmin /usr/share/nginx/html
 ARG API_URL
 ENV API_URL ${API_URL}
 EXPOSE 80
